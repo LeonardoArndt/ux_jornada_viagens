@@ -1,0 +1,65 @@
+.destinations-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dest-card header {
+    display: block;
+    background-color: transparent;
+    position: static;
+    padding: 0;
+}
+
+.dest-card-img-tokyo {
+    height: 368px;
+    background: url(../imgs/dest-mobile-tokyo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.dest-card-img-osaka {
+    height: 368px;
+    background: url(../imgs/dest-mobile-osaka.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.button {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .destinations { 
+        width: 648px;
+    }
+    .destinations-imgs{ 
+        flex-direction: row;
+        height: 452px;
+    }
+    .dest-card-img-tokyo {
+        background: url(../imgs/dest-tablet-desk-tokyo.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .dest-card-img-osaka {
+        background: url(../imgs/dest-tablet-desk-osaka.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .button {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .destinations { 
+        width: 900px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .destinations { 
+        width: 1200px;
+    }
+}
