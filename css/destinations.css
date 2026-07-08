@@ -1,65 +1,73 @@
-.destinations-imgs {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.destination-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
-.dest-card header {
-    display: block;
-    background-color: transparent;
-    position: static;
-    padding: 0;
+.destinations .item .img-item {
+  width: 100%;
+  height: 368px;
 }
 
-.dest-card-img-tokyo {
-    height: 368px;
-    background: url(../imgs/dest-mobile-tokyo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.destinations .item.tokyo .img-item {
+  background: url(../imgs/dest-mobile-tokyo.jpg);
+  background-size: cover;
+}
+.destinations .item.osaka .img-item {
+  background: url(../imgs/dest-mobile-osaka.jpg);
+  background-size: cover;
 }
 
-.dest-card-img-osaka {
-    height: 368px;
-    background: url(../imgs/dest-mobile-osaka.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.destinations .item header h3 {
+  margin: 24px 0;
 }
 
-.button {
-    width: 100%;
+.destinations .item p {
+  margin-bottom: 24px;
+}
+
+.destinations .button {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .destinations { 
-        width: 648px;
-    }
-    .destinations-imgs{ 
-        flex-direction: row;
-        height: 452px;
-    }
-    .dest-card-img-tokyo {
-        background: url(../imgs/dest-tablet-desk-tokyo.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .dest-card-img-osaka {
-        background: url(../imgs/dest-tablet-desk-osaka.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .button {
-        width: 280px;
-    }
+  .destinations {
+    width: 648px;
+  }
+  .destinations .item .img-item {
+    width: 100%;
+    height: 452px;
+  }
+  .destinations .item.tokyo .img-item {
+    background: url(../imgs/dest-tablet-desk-tokyo.jpg);
+    background-size: cover;
+  }
+  .destinations .item.osaka .img-item {
+    background: url(../imgs/dest-tablet-desk-osaka.jpg);
+    background-size: cover;
+  }
+  .destinations .button {
+    width: 280px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .destinations { 
-        width: 900px;
-    }
+  .destinations {
+    width: 900px;
+  }
+
+  .destinations .item .img-item {
+    width: 100%;
+    height: 452px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .destinations { 
-        width: 1200px;
-    }
+  .destinations {
+    width: 1200px;
+  }
+  .destination-items {
+    flex-direction: row;
+  }
 }

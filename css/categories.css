@@ -18,8 +18,6 @@
 
 .categories-cards h3 {
     color: var(--text-primary-color);
-    font-weight: var(--titles-weight);
-    font-size: 28px;
 }
 
 .categories-cards img {
