@@ -18,15 +18,25 @@
     --menu-text-weight: 400;
 }
 
-h1 {
-    color: var(--secondary-color);
-    font-family: "Montserrat", sans-serif;
-    font-weight: var(--titles-weight);
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    color: var(--text-primary-color);
+  font-family: "Montserrat";
+  color: var(--text-primary-color);
 }
 
 section {
@@ -34,9 +44,11 @@ section {
     margin: 0 auto 88px;
 }
 
-section.hero{
-    width: 100%;
-    margin: 0;
+
+section.hero,
+section.bottom-hero {
+  width: 100%;
+  margin: 0;
 }
 
 .section-title {
@@ -48,6 +60,7 @@ section.hero{
     font-weight: var(--titles-weight);
     font-size: 28px;
     text-align: center;
+    margin: 0;
 }
 
 .section-title hr {
@@ -56,6 +69,18 @@ section.hero{
     height: 4px;
     border: none;
     margin: 16px auto 32px;
+}
+
+.content-title{
+    font-size: 28px;
+    font-weight: var(--titles-weight);
+    margin-bottom: 0 0 24px;
+}
+
+.content-text{
+    font-size: 20px;
+    font-weight: var(--text-weight);
+    line-height: 32px;
 }
 
 .button{

@@ -1,0 +1,76 @@
+
+.payments .payment-imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    height: 460px;
+    width: 100%;
+}
+
+.payments .content-container .payment-imgs .img.bag {
+    background: url("../imgs/pay-mobile-bag.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.payments .content-container .payment-imgs .img.passport {
+    background: url("../imgs/pay-mobile-pas.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.payments .content-container .payment-imgs .img.person {
+    background: url("../imgs/pay-mobile-person.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.payments .content-container .payment-imgs .img.colspan {
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+    .payments .content-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .payments .content-container .payment-imgs .img.bag {
+        background: url("../imgs/pay-tablet-desk-bag.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .payments .content-container .payment-imgs .img.passport {
+        background: url("../imgs/pay-tablet-desk-pas.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .payments .content-container .payment-imgs .img.person {
+        background: url("../imgs/pay-tablet-desk-person.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .payments .content-container .payment-imgs .img.colspan {
+        grid-column: span 2;
+    }
+    .payments .content-container .content-text {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .payments .content-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .payments .content-container{
+        justify-content: space-between;
+    }
+    .payments .content-container .payment-imgs{
+        width: 790px;
+        margin: 0;
+    }
+    .payments .content-container .content-text {
+        width: 360px;
+    }
+}
